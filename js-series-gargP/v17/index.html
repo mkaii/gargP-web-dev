@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="clickButton">try Clicking me</button>
+    <hr />
+
+    <div id="divID">Hi, I am Mainak Ghosh</div>
+  </body>
+
+  <script>
+    const divJSOBj = document.getElementById("divID");
+    const buttonjs = document.getElementById("clickButton");
+
+    let counter = 0;
+
+    buttonjs.addEventListener("click", () => {
+      console.log("Button was clicked!!!");
+      const h1js = document.createElement("h5");
+      h1js.innerText = counter;
+      divJSOBj.appendChild(h1js);
+      counter++;
+    });
+  </script>
+</html>
